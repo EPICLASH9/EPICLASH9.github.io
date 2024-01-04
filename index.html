@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPICLASH</title>
+    <title>Your Website Title</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             transition: background-color 0.3s;
         }
         header {
@@ -48,16 +46,16 @@
             margin-left: 10px;
             cursor: pointer;
         }
+        /* Updated style for alternate background color */
+        .alternate-background {
+            background-color: lightblue; /* Change this color */
+        }
         .content img {
             display: block;
             margin: 0 auto;
             max-width: 100%;
             height: auto;
             margin-top: 20px;
-        }
-        /* Added style for alternate background color */
-        .alternate-background {
-            background-color: #696969;
         }
     </style>
 </head>
@@ -74,13 +72,13 @@
             <div class="switch-label">
                 <label for="colorSwitch">Switch Background Color</label>
                 <!-- Add the checked attribute to enable the toggle by default -->
-                <input type="checkbox" id="colorSwitch" onclick="toggleBackgroundColor()" unchecked>
+                <input type="checkbox" id="colorSwitch" onclick="toggleBackgroundColor()" checked>
             </div>
         </div>
     </header>
 
     <div class="content">
-        <img src="images/epiclash.png" alt="Your Image Alt Text">
+        <img src="your-image-filename.jpg" alt="Your Image Alt Text">
     </div>
 
     <script>
