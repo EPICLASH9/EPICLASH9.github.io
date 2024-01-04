@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>EPICLASH</title>
     <style>
+        @font-face {
+            font-family: 'YourCustomFont';
+            src: url('fonts/your-font.woff2') format('woff2'),
+                 url('fonts/your-font.woff') format('woff');
+            /* Add more src lines for additional font formats if necessary */
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'YourCustomFont', sans-serif;
             transition: background-color 0.3s;
         }
         header {
@@ -46,16 +55,16 @@
             margin-left: 10px;
             cursor: pointer;
         }
-        /* Updated style for alternate background color */
-        .alternate-background {
-            background-color: lightblue; /* Change this color */
-        }
         .content img {
             display: block;
             margin: 0 auto;
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+        }
+        /* Added style for alternate background color */
+        .alternate-background {
+            background-color: #696969;
         }
     </style>
 </head>
@@ -72,13 +81,13 @@
             <div class="switch-label">
                 <label for="colorSwitch">Switch Background Color</label>
                 <!-- Add the checked attribute to enable the toggle by default -->
-                <input type="checkbox" id="colorSwitch" onclick="toggleBackgroundColor()" checked>
+                <input type="checkbox" id="colorSwitch" onclick="toggleBackgroundColor()" unchecked>
             </div>
         </div>
     </header>
 
     <div class="content">
-        <img src="your-image-filename.jpg" alt="Your Image Alt Text">
+        <img src="images/epiclash.png" alt="Your Image Alt Text">
     </div>
 
     <script>
