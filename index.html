@@ -34,10 +34,8 @@
             justify-content: space-between;
             align-items: center;
         }
-        .epiclash {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-left: 15px; /* Adjust the margin as needed */
+        .epiclash img {
+            height: 30px; /* Adjust the height as needed */
         }
         .top-bar a {
             color: white;
@@ -74,7 +72,9 @@
 <body>
     <header>
         <div class="top-bar">
-            <div class="epiclash">EPICLASH</div>
+            <div class="epiclash">
+                <img src="images/epiclash.png" alt="EPICLASH Logo">
+            </div>
             <div>
                 <a href="learn-more.html">Learn More</a>
                 <a href="meet-the-crew.html">Meet the Crew</a>
@@ -83,14 +83,13 @@
             </div>
             <div class="switch-label">
                 <label for="colorSwitch">Switch Background Color</label>
-                <!-- Add the checked attribute to enable the toggle by default -->
                 <input type="checkbox" id="colorSwitch" onclick="toggleBackgroundColor()" unchecked>
             </div>
         </div>
     </header>
 
     <div class="content">
-        <img src="images/epiclash.png" alt="Your Image Alt Text">
+        <!-- Remove the middle image as requested -->
     </div>
 
     <script>
